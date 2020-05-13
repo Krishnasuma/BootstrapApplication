@@ -1,0 +1,21 @@
+.infoTitle{
+    padding: 0 10px 6px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #494848;
+}
+
+.accordionHead{
+    display: flex;
+    align-items: center;
+    .accordionTitle{
+        font-size: 14px;
+        color: #333;
+        font-weight: 600;
+    }
+}
+.accordionArrow{
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}

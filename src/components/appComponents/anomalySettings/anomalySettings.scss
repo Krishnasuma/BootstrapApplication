@@ -1,0 +1,65 @@
+.anomalyIcon{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+td{
+    padding: 10px 5px;
+}
+.anomalyPanel{
+    padding: 15px;
+    .anomalyPanelTitle{
+        @extend .anomalyIcon;
+        border-bottom: solid 1px #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 10px;display: flex;
+        justify-content: space-between;
+        .titleContent{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .anomalyType{
+        display: flex;
+        align-items: center;
+        .typeTitle{
+            font-size: 14px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        .nightAnomaly{
+            background-color: #4c4747;
+            color: #fff;
+        }
+        .morningAnomaly{
+            background-color: #fff;
+            color: #4c4747;
+        }
+        .typeBody{
+            height: 70px;
+            width: 100px;
+            border: solid 3px #ccc;
+            border-radius: 6px;
+            display: block;
+            text-align: center;
+            padding: 5px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+            .typeContent{
+                font-weight: 600;
+            }
+        }
+    }
+    .anomalyPriority{
+        @extend .anomalyType;
+        .typeBody{
+            background-color: #fff;
+            color: red;
+        }
+        .warningBorder{
+            border: solid 3px orange;
+        }
+        .dangerBorder{
+            border: solid 3px red;
+        }
+    }
+}

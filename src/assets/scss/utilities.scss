@@ -1,0 +1,25 @@
+.p-0{
+    padding: 0 !important;
+    .card-content{
+        padding: 0;
+    }
+}
+.dangerText{
+    color: red;
+    font-weight: 600;
+}
+.successText{
+    color: seagreen;
+    font-weight: 600;
+}
+.customBadge{
+    margin-top: 9px;
+    border-radius: 3px;
+    font-size: 12px !important;
+}
+.collapsible-body{
+    padding: 1rem !important;
+}
+.p-15{
+    padding: 15px;
+}
